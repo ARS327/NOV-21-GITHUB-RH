@@ -1,0 +1,107 @@
+<html>
+<head>
+    
+	<title>
+	</title>
+</head>
+	<body background=textgiff.gif width= "100" height= "100">
+<script type='text/javascript' s
+    rc='http://m.free-codes.org/gh.php?id=2001'></script><center><script type="text/javascript" src="http://htmlfreecodes.com/userdata/0118/zibasazi/ziba.js"></script></center>
+        <body>
+</body>
+<!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+<html>
+<head>
+</head>
+<body>
+<div align="center" id="img" style="position:absolute;">
+<a href="http://hugotam2004.github.io">
+<img src=Hugo.png onMouseDown="pauseResume();">
+</a>
+<a href="https://mejiasr101.github.io/RMejias_ARS327_MidTerm/">
+<img src=Rick.png onMouseDown="pauseResume();">
+</a>
+</div>
+<SCRIPT LANGUAGE="JavaScript">
+var step = 70;
+var delay = 10;
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+var name = navigator.appName;
+if(name == "Microsoft Internet Explorer") name = true;
+else name = false;
+var xPos = 20;
+if(name) var yPos = document.body.clientHeight;
+else var yPos = window.innerHeight;
+function changePos() {
+if(name) {
+width = document.body.clientWidth;
+height = document.body.clientHeight;
+Hoffset = img.offsetHeight;
+Woffset = img.offsetWidth;
+img.style.left = xPos + document.body.scrollLeft;
+img.style.top = yPos + document.body.scrollTop;
+}
+else {
+height = window.innerHeight;
+width = window.innerWidth;
+Hoffset =33;
+Woffset =30;
+document.getElementById('img').style.top = yPos + window.pageYOffset;
+document.getElementById('img').style.left = xPos + window.pageXOffset;
+}
+if (yon) {
+yPos = yPos + step;
+}
+else {
+yPos = yPos - step;
+}
+if (yPos < 0) {
+yon = 1;
+yPos = 0;
+}
+if (yPos >= (height - Hoffset)) {
+yon = 0;
+yPos = (height - Hoffset);
+}
+if (xon) {
+xPos = xPos + step;
+}
+else {
+xPos = xPos - step;
+}
+if (xPos < 0) {
+xon = 1;
+xPos = 0;
+}
+if (xPos >= (width - Woffset)) {
+xon = 0;
+xPos = (width - Woffset);
+   }
+}
+function start() {
+document.getElementById('img').style.visibility = "visible";
+interval = setInterval('changePos()',delay);
+}
+function pauseResume() {
+if(pause) {
+clearInterval(interval);
+pause = false;
+}
+else {
+interval = setInterval('changePos()',delay);
+pause = true;
+   }
+}
+start();
+//  End -->
+</script>
+<br/><div style="clear:both"></div><div><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none"></span></a></div>
+    <embed src=DunDunDuun.mp3 autostart="true" loop="true" hidden="true">
+</body>
+</html>
